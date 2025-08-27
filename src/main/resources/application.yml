@@ -1,0 +1,15 @@
+server:
+  port: ${SERVER_PORT:8083}
+spring:
+  application:
+    name: delivery-ms
+  data:
+    mongodb:
+      uri: mongodb://delivery_db:password@localhost:27018/delivery_db?authSource=admin
+      database: delivery_db
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
